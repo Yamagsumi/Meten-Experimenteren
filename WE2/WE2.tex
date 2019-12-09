@@ -9,56 +9,12 @@
 
 \maketitle
 
-\section{Doel}
-Het doel van dit practica is experimenteel bepalen van het rendement
-van een gelijkstroommotor en wisselstroomgenerator
+\input{doel.tex}
 
-\section{Materiaal}
-\begin{itemize}
-    \item Gelijkstroommotor
-    \item Generator
-    \item RPM-meter
-    \item Elektrodynamische vermogenmeter
-    \item Stroomtransformator
-\end{itemize}
+\input{materiaal.tex}
 
-\section{Formules}
-De opstelling was uitgerust met een gelijkstroommotor. Hierbij gebeurt de bepaling van $P_{el1}$
-aan de hand van de meting van de gelijkspanning waarmee de motor wordt gevoed $U_1$ en de stroom 
-die hij opslorpt $I_1$. Het vermogen is gelijk aan het product van de stroom en de spanning:
-\begin{equation}
-    P_{el1} = U_1 \cdot I_1
-\end{equation}
-Hiernaast was de proefopstelling uitgerust met alternatoren die 
-elektrische energie opwekken onder de vorm van wisselspanning. De meting van $P_{el2}$
-gebeurt met een wisselstroom wattmeter. De assistent liet ons weten dat we bij de vermogenmeter
-niet de spanning en stroom moeten noteren.\\
+\input{formules.tex}
 
-\noindent Het mechanisch vermogen waarmee de motor de generator aandrijft is te berekenen
-met de formule: 
-\begin{equation}
-    P_{mech} = M \cdot n \cdot \frac{2\pi}{60}
-\end{equation} 
-met \\
-M: koppel gemeten met de koppelmetern: hoeksnelheid in frac{toeren}{min}
-
-\section{Foutenanalyse}
-\subsection{Systematische fouten}
-
-\subsection{Toevallige fouten}
-\textbf{Rechtstreekse grootheden}\\
-De $U_1,I_1,M,n$ en $P_{el2}$ werden rechtstreeks gemeten. De toevallige fouten
-op deze grootheden werden berekend aan de hand van de volgende formule: 
-\begin{equation}
-    \sigma=\sqrt{\frac{\sum\limits_{i=0}^n(x_i-m)^2}{n-1}}  
-\end{equation}
-
-\noindent \textbf{Onrechtstreekse grootheden}\\
-De onrechtstreekse grootheden in dit practica zijn $P_{el1},P_{mech},\eta_{1}$ en
-$\eta_2$.\\
-Volgende formules werden gebruikt om de toevallige fouten te bepalen:\\
-\begin{equation}
-    \sigma^2\{R\}=\sum\limits_{i=0}^n\left(\frac{\partial \Psi}{\partial X_i}\right)_0^2 \sigma ^2 \{X_i\}
-\end{equation}
+\input{foutenanalyse.tex}
 
 \end{document}
